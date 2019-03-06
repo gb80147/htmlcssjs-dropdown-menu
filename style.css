@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 90vw;
+  height: 100vh;
+  margin: auto;
+}
+
+.navContainer{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.leftSideNav{
+  display: flex;
+  align-items: center;
+}
+
+.leftSideNav *{
+  margin-right: 10px;
+}
+#logo img{
+  height: 30px;
+}
+
+.rightSideNav{
+  display: flex;
+  align-items: center;
+}
+
+.rightSideNav a,
+.leftSideNav a{
+  text-decoration: none;
+  color: rgb(160, 166, 173);
+}
+
+.rightSideNav a:hover,
+.leftSideNav a:hover{
+  color: black;
+}
+
+.navElement{
+  margin-left: 30px;
+  position: relative;
+}
+
+.dropContainerI{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  border-radius: 8px;
+  display: none;
+  background: white;
+}
+
+.dropElementI,
+.dropElementII{
+  padding: 10px 20px;
+  position: relative;
+  text-align: right;
+}
+
+.dropElementI .fas{
+  margin-right: 10px;
+  display: inline;
+
+}
+
+.dropElementI:hover,
+.dropElementII:hover{
+  background: lightgrey;
+}
+
+.dropContainerII{
+  position: absolute;
+  top: 0;
+  right: calc(100% - 10px);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  border-radius: 8px;
+  background-color: white;
+  display: none;
+  width: 100%;
+}
+
+button{
+  background-color: rgb(235, 0, 141);
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  margin-left: 30px;
+}
+
+button:hover{
+  background: rgb(210, 0, 126);
+}
